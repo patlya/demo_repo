@@ -177,7 +177,7 @@
 # for k, v in dict.items():
 #     v=v+v
 # print(v)
-
+#------------------------------------------------------
 # ls = ["abc", "123", "xyz"]
 # ls=["abc", "1"]
 ls=["abcd", "12", "x"]
@@ -187,21 +187,100 @@ ls=["abcd", "12", "x"]
 # "a1xb2 c  d  "
 # "a1b2 3 4"
 
-ln=len(ls)
-print(ln)
-str=""
-for i in ls:
-    if i=='':
-        str+=' '
-        # ls.append(i[1:])
-    for k in i[:1]:
-        # import pdb;pdb.set_trace()
-        str+=k
-        ls.append(i[1:])
-        # break
-print(str)        
+# ln=len(ls)
+# print(ln)
+# str=""
+# for i in ls:
+#     if i=='':
+#         str+=' '
+#         # ls.append(i[1:])
+#     for k in i[:1]:
+#         # import pdb;pdb.set_trace()
+#         str+=k
+#         ls.append(i[1:])
+#         # break
+# print(str)        
+#----------------------------------------------------------
+# from collections import Counter
+# inpt = "tna magenta magnate tan gnamate"
+# inp= inpt.split(" ")  
+# for i in range(0, len(inp)):
+#   # import pdb;pdb.set_trace()
+#   inp[i]=''.join(sorted(inp[i]))
+# print(inp)
+# x=Counter(inp)
 
+# print(max(x.values()))
+# ........................................................
+# n= [19, 15, 15, 5, 3, 3, 5, 2]
 
-        
+# for i in n :
+#   x = n.count(i)
+#   # if i == 19    and x == 2 or i == 5 and x == 3:
+#   if n.count(i)>=2:
+#     print("true", i) 
+#   # print("false")  
+# .......................................................
+# n = [19, 15, 5, 7, 5, 5, 2]
+# # ln = len(n)
+# for i in range(len(n)):
+#   x= n.count(i)
+#   if n[i]==5 or  x == 3 and len(n) == 8:
+#     print("true")
 
+# .........................................................
+# n = 922
 
+# x = n % 34
+# y = pow(4, 4)
+# if y<=n and x == 4:
+#   print("true")
+# else:
+#   print('False')
+# .........................................................
+# no = 17
+# x = no//2
+# l =[]
+# # import pdb;pdb.set_trace()
+# if no%2 == 0:
+#   for i in range(0,2):
+#     l.append(no)
+#     b = no+2
+#     no=b
+# else:
+#     for i in range(0,17):
+#       l.append(no)
+#       b = no+2
+#       no=b
+# print(l)
+# ...............................................................
+# from itertools import combinations 
+# # ni  = ['a', 'abb', 'sfs', 'oo', 'de', 'sfde']
+# ni = ['a', 'abb', 'sad', 'ooaaesdfe', 'sfsdfde', 'sfsd', 'sfsdf', 'qwsfsdfrew']
+# new=[]
+# st=ni[-1]
+# for p in combinations(st, 5):
+#     new.append(''.join(p))
+#     if ni[-2] in new:
+#       print("True")
+
+# # print(new)
+# ...................................................................
+strs = ['palindrome', 'nadamimadam', '', 'foo', 'eyes']
+'''
+i[::-1] minus value use for reverse data
+'''
+for i in strs:
+  import pdb;pdb.set_trace()
+  if i[::-1] == i:
+    print("True")
+  else:
+    print("False")   
+
+# ........................................................................
+# import re
+# ls=[]
+# strs = "W3resource Python, Exercises asddds adsa sddaa"
+# s = re.split(r"([ ,]+)", strs)
+# ls.append([s[::2],s[1::2]])
+# print(ls)
